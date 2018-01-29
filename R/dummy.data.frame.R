@@ -18,6 +18,8 @@ dummy.data.frame <-
 ) {
 
   # Initialize the data.frame
+    data <- as.data.frame(data)
+
     df<-data.frame( row.names=row.names(data) )     
     new.attr <- list()  # Track location of dummy variables
 
